@@ -1,0 +1,203 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"Discount"
+			],
+			[
+				"ca",
+				"CardDiscount"
+			],
+			[
+				"isn",
+				"is_null"
+			],
+			[
+				"ta",
+				"Tag_7"
+			],
+			[
+				"n",
+				"Name"
+			],
+			[
+				"e",
+				"enctype	Attr"
+			],
+			[
+				"ec",
+				"enctype	Attr"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ce",
+				"cellspacing	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/Homework.php",
+		"/C/xampp/htdocs/test090614.php",
+		"/C/Users/FDA-DC001/Downloads/Sublime Text Build 3059 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/FDA-DC001/Downloads/Sublime Text Build 3059 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/index.php",
+		"/C/Users/FDA-DC001/Desktop/test.php",
+		"/C/Users/FDA-DC001/Desktop/Homework.php"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			">\";\n",
+			"<!doctype html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>ทดสอบภาษาไทย</title>\n</head>\n<body bgcolor='Orange'>\n<?php\n//-----------------------------Declare variable-------------------------\n$MemberName = \"vipama\";\n$Brand = \"Samsung Note 10.1\";\n$Price = 20000;\n$Tag_7 = ($Price*7)/100;\n$Discount = ($Price*10)/100;\n$CardDiscount = 1500;\n//----------------------------------------------------------------------\necho \"<table border='1' cellspacing='0' cellpadding='0' border='0' align='center' width='50%' bgcolor='lightyellow'><tr><td>\";\necho \"<table width='100%' cellspacing='3' cellpadding='3' border='0' align='center'><tr><td align='center'>\";\necho \"--------------------------------รายการสินค้า--------------------------------\";\necho \"</td></tr>\";\necho \"<tr><td>\";\necho \"ชื่อสินค้า : \".$Brand;\necho \"</td></tr>\";\necho \"<tr><td>\";\necho \"ราคา : \".$Price.\" บาท\";\necho \"</td></tr>\";\necho \"<tr><td>\";\necho \"ค่าภาษี : \".$Tag_7.\" บาท\";\necho \"</td></tr>\";\necho \"<tr><td>\";\necho \"ราคาสุทธิ : \".($Price+$Tag_7).\" บาท\";\necho \"</td></tr>\";\necho \"<tr><td>\";\necho \"ถ้าเป็นสมาชิกจะลดทันทีอีก 10%  เป็นเงิน : \".(($Price*10)/100).\" บาท\";\necho \"</td></tr>\";\necho \"<tr><td>\";\necho \"<hr>\";\necho \"</td></tr>\";\nif($MemberName == \"vipama\")\n{\n	echo \"<tr><td>คุณ : \".$MemberName.\"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สถานะ : สมาชิก <hr></td></tr>\";\n	if( (($Price+$Tag_7)-$Discount) > 15000) \n	{\n		#Comment code\n		echo \"<tr><td>ราคาสินค้าแพงไป กรุณาใช้บัตรเงินสดร่วมด้วย</td></tr>\";\n		echo \"<tr><td>จะลดราคาลงอีก : \".$CardDiscount.\" บาท จากราคา : \".(($Price+$Tag_7)-$Discount).\" บาท</td></tr>\";\n		echo \"<tr><td>จะเหลือแค่ : \".((($Price+$Tag_7)-$Discount)-$CardDiscount).\" บาท</td></tr>\";\n	}else{\n		echo \"<tr><td>ราคาสินค้าลดแล้วไม่ต้องใช้บัตรเงินสดร่วม</td></tr>\";\n	}	\n}elseif (is_null($MemberName) == true) {\n	# code...\n	echo \"<tr><td>คุณไม่ได้เป็นสมาชิก <br /> กรุณาสมัครสมาชิกก่อนจะได้รับสิทธิพิเศษ</td></tr>\";\n}\necho \"<tr><td align='center'>------------------------------รายการของแถม------------------------------</td></tr>\";\necho \"<tr><td>1.ฟิมล์กันรอยหน้าจอ</td></tr>\";\necho \"<tr><td>2.เคสใส</td></tr>\";\necho \"</table>\";\necho \"</td></tr></table>\";\n?>\n</body>\n</html>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "test090614.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
