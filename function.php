@@ -46,4 +46,17 @@ function getStar($Id){
 	}
 	return $showheart;
 }
+function get_agency_name()
+{
+	$linkdb = connect_db();
+	$sql="select ag_ID,ag_Name from Tb_Agency";
+	$result = mysqli_query($linkdb,$sql);
+	while ($row = mysqli_fetch_array($result)) {
+		# code...
+		echo "<option value='$row['ag_ID']'>";
+		echo "$row['ag_Name']";
+		echo "</option>";
+	}
+}
  ?>
+
